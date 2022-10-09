@@ -7,7 +7,7 @@ import { ContactList } from "components/ContactList/ContactList";
 import Notiflix from "notiflix";
 Notiflix.Notify.init({
     position: 'center-top',
-    distance: '280px',
+    distance: '250px',
     useIcon: false,
     fontSize: '21px',
     
@@ -45,9 +45,7 @@ export class Phonebook extends Component {
         const id = nanoid()
         if (name === "" || number === "") {
             Notiflix.Notify.warning("Please fill all contact data")
-            // Notiflix.Notify.init({
-            //     position: 'center-top',
-            // });
+           
         }
         else {
             this.setState(state => ({
