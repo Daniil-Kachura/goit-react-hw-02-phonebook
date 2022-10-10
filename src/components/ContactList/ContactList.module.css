@@ -13,8 +13,8 @@
 
 .button {
   margin-left: 10px;
-  background-color: beige;
-  border: 1px solid orange;
+  background-color: #fff;
+  border: 1px solid #b0c4de;
   border-radius: 4px;
   height: 20px;
   cursor: pointer;
