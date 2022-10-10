@@ -55,41 +55,14 @@ export default class App extends Component {
         justifyContent: `space-around`
       }}>
       <div
-        style={{
-          backgroundColor: `hsla(180,8%,91%,.7)`,
-          border: `2px solid #b0c4de`,
-          boxShadow: `0 5px 15px rgb(0 0 0 / 35%)`,
-          color: `#000`,
-          fontSize: `24px`,
-          padding: `20px`,
-          height: `max-content`,
-          marginTop: `20px`,
-          width: `300px`,
-          borderRadius: `5px`
-        }}
-      >
+       class="container">
         <h1  style={{
         textAlign: 'center'
         }}>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} /></div>
-        <div 
-         style={{
-          backgroundColor: `hsla(180,8%,91%,.7)`,
-          border: `2px solid #b0c4de`,
-          boxShadow: `0 5px 15px rgb(0 0 0 / 35%)`,
-          color: `#000`,
-          fontSize: `24px`,
-          padding: `20px`,
-          height: `max-content`,
-          marginTop: `20px`,
-          width: `300px`,
-          borderRadius: `5px`
-        }}>
+        <div class="container">
         <Filter onChange={this.filterContacts} />
-        <h2 style={{ marginBottom: '0' }}>Contacts</h2>
-        <div style={{ color: 'blue', marginTop: '10px' }}>
-          All contacts: {contacts.length}
-        </div>
+        <h2 style={{textAlign: 'center', marginBottom: '0' }}>Contacts</h2>
         <ContactList contacts={visibleContacts} onDelete={this.deleteContact} /></div>
         </div></article></>
     );
